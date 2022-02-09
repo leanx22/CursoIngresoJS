@@ -14,10 +14,11 @@ function mostrarAumento()
 	let numero_Resultado;
 	
 	//Modificando esta variable podemos cambiar el aumento que queremos hacer.
-	let porcentaje = 10;
+	let porcentaje;
+	porcentaje = prompt("Ingrese porcentaje");
 
 	//Obtengo dato ingresado por usuario.
-	numero_Sueldo = document.getElementById("txtIdSueldo").value
+	numero_Sueldo = document.getElementById("txtIdSueldo").value; 
 
 	//Realizo la operación para sumarle al dato otorgado el porcentaje deseado.
 	numero_Resultado = parseInt(numero_Sueldo)*porcentaje;

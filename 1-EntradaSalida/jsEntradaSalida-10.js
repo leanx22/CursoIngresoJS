@@ -1,8 +1,11 @@
 /*
-Debemos lograr tomar el importe por ID.
-Transformarlo a entero (parseInt), luego
-mostrar el importe con un Descuento del 25 %
-en el cuadro de texto "RESULTADO"*/
+10 bis 
+lo anterior mas.
+se debe pedir el % por prompt
+cambiamos la salida:
+Mostrar por alert el importe, la cantidad del descuento, el importe con el descuento
+ej: "El importe es 1000 la cantidad de descuento es 250 y el importe con el descuento es 750"
+*/
 function mostrarAumento()
 {
 	///////////////////////////////////////
@@ -14,11 +17,14 @@ function mostrarAumento()
 	let numero_Resultado;
 	
 	//Modificando esta variable podemos cambiar el descuento que queremos hacer.
-	let porcentaje = 25;
+	let porcentaje;
+	porcentaje = prompt("Ingrese el porcentaje");
+
 
 	//Obtengo dato ingresado por usuario.
 	numero_Importe = document.getElementById("txtIdImporte").value
-
+	numero_ImporteOriginal = document.getElementById("txtIdImporte").value
+	
 	//Realizo la operación para obtener el x% del importe dado y se lo resto.
 	numero_Resultado = parseInt(numero_Importe)*porcentaje;
 	numero_Resultado /= 100;
@@ -27,4 +33,5 @@ function mostrarAumento()
 	//Muestro el resultado en la txtBox.
 	document.getElementById("txtIdResultado").value = numero_Importe;
 
+	alert("El importe es"+numero_ImporteOriginal+". La cantidad de descuento es  "+porcentaje+". Y el importe con el descuento es "+numero_Importe+".");
 }

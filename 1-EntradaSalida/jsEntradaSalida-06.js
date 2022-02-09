@@ -5,7 +5,6 @@ mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
 	//IDs - txtIdNumeroUno txtIdNumeroDos
-	//alert("ok");
 
 	var numero_01;
 	var numero_02;
